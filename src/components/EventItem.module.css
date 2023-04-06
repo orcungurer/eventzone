@@ -1,0 +1,46 @@
+.event {
+  max-width: 50rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.event img {
+  width: 30rem;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.actions a,
+.actions button {
+  padding: 0.5rem 1rem;
+  width: 5rem;
+  text-decoration: none;
+  border: 1px solid #FF9999;
+  background-color: #FF9999;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.actions a:hover,
+.actions button:hover {
+  border: 1px solid #FF8080;
+  background-color: #FF8080;
+}
+
+@media screen and (max-width: 650px) {
+  .event {
+    margin: 2rem;
+  }
+
+  .event img {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
