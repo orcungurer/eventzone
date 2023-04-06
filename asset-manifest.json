@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/eventzone/static/css/main.7da1af47.css",
+    "main.js": "/eventzone/static/js/main.47eaa8bd.js",
+    "static/media/eventzone.svg": "/eventzone/static/media/eventzone.d479671469ccac2436b0fc86b2107056.svg",
+    "index.html": "/eventzone/index.html",
+    "main.7da1af47.css.map": "/eventzone/static/css/main.7da1af47.css.map",
+    "main.47eaa8bd.js.map": "/eventzone/static/js/main.47eaa8bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7da1af47.css",
+    "static/js/main.47eaa8bd.js"
+  ]
+}
