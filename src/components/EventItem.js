@@ -7,11 +7,15 @@ const EventItem = ({ event, eventId }) => {
   const [isDeletionStarted, setIsDeletionStarted] = useState(false);
 
   const startDeleteHandler = () => {
-    setIsDeletionStarted(true);
+    console.log("You are not allowed to delete an item.");
+    // TODO: uncomment the code below in order to active delete.
+    // also remove disabled from the delete button.
+    
+    // setIsDeletionStarted(true);
 
-    if (isDeletionStarted) {
-      submit(null, { method: "DELETE" });
-    }
+    // if (isDeletionStarted) {
+    //   submit(null, { method: "DELETE" });
+    // }
   };
 
   return (
@@ -22,7 +26,7 @@ const EventItem = ({ event, eventId }) => {
       <time>{event.date}</time>
       <menu className={classes.actions}>
         <Link to="edit">Edit</Link>
-        <button onClick={startDeleteHandler}>
+        <button onClick={startDeleteHandler} disabled>
           {isDeletionStarted ? "Sure?" : "Delete"}
         </button>
       </menu>

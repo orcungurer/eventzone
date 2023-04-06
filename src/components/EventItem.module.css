@@ -34,6 +34,13 @@
   background-color: #FF8080;
 }
 
+.actions button:disabled {
+  cursor: default;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 @media screen and (max-width: 650px) {
   .event {
     margin: 2rem;

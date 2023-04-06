@@ -65,7 +65,7 @@ const EventForm = ({ method, event }) => {
         <button type="button" onClick={cancelHandler} disabled={isSubmitting}>
           Cancel
         </button>
-        <button disabled={isSubmitting}>
+        <button disabled={isSubmitting || method === "patch"}>
           {isSubmitting ? "Submitting..." : "Save"}
         </button>
       </div>
@@ -78,6 +78,12 @@ export default EventForm;
 export const action = async ({ request, params }) => {
   const data = await request.formData();
   const method = request.method;
+
+  // TODO: remove the if check below to active edit.
+  // also remove method from button.
+  if (method === "PATCH") {
+    return;
+  }
 
   const eventData = {
     title: data.get("title"),
