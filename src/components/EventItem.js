@@ -1,16 +1,20 @@
-import { useState } from "react";
-import { Link, useSubmit } from "react-router-dom";
+// import { useState } from "react";
+import { 
+  Link, 
+  // useSubmit 
+} from "react-router-dom";
 import classes from "./EventItem.module.css";
 
+// TODO: uncomment everything in order to active delete.
+// also remove disabled from the delete button.
+
 const EventItem = ({ event, eventId }) => {
-  const submit = useSubmit();
-  const [isDeletionStarted, setIsDeletionStarted] = useState(false);
+  
+  // const submit = useSubmit();
+  // const [isDeletionStarted, setIsDeletionStarted] = useState(false);
 
   const startDeleteHandler = () => {
     console.log("You are not allowed to delete an item.");
-    // TODO: uncomment the code below in order to active delete.
-    // also remove disabled from the delete button.
-    
     // setIsDeletionStarted(true);
 
     // if (isDeletionStarted) {
@@ -27,7 +31,8 @@ const EventItem = ({ event, eventId }) => {
       <menu className={classes.actions}>
         <Link to="edit">Edit</Link>
         <button onClick={startDeleteHandler} disabled>
-          {isDeletionStarted ? "Sure?" : "Delete"}
+          {/* {isDeletionStarted ? "Sure?" : "Delete"} */}
+          Delete
         </button>
       </menu>
     </article>
