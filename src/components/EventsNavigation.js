@@ -15,14 +15,14 @@ const EventsNavigation = () => {
               All Events
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/events/new"
               className={({ isActive }) => (isActive ? classes.active : "")}
             >
               New Event
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
