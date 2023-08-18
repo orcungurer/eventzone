@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/eventzone/static/css/main.0c1696c1.css",
-    "main.js": "/eventzone/static/js/main.ce7b0a1e.js",
+    "main.js": "/eventzone/static/js/main.708b7f7a.js",
     "static/media/eventzone.svg": "/eventzone/static/media/eventzone.d479671469ccac2436b0fc86b2107056.svg",
     "index.html": "/eventzone/index.html",
     "main.0c1696c1.css.map": "/eventzone/static/css/main.0c1696c1.css.map",
-    "main.ce7b0a1e.js.map": "/eventzone/static/js/main.ce7b0a1e.js.map"
+    "main.708b7f7a.js.map": "/eventzone/static/js/main.708b7f7a.js.map"
   },
   "entrypoints": [
     "static/css/main.0c1696c1.css",
-    "static/js/main.ce7b0a1e.js"
+    "static/js/main.708b7f7a.js"
   ]
 }
